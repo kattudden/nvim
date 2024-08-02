@@ -132,6 +132,7 @@ keymap.set("n", '<leader>dh', '<cmd>Telescope dap commands<cr>')
 keymap.set("n", '<leader>de', function() require('telescope.builtin').diagnostics({default_text=":E:"}) end)
 
 -- Spell
-keymap.set("n", '<leader>la', ":setlocal spell")
-keymap.set("n", '<leader>le', ":setlocal spelllang=en_us<cr>")
-keymap.set("n", '<leader>ld', ":setlocal spelllang=de_ch<cr>")
+keymap.set("n", '<leader>la', ":local spell") -- activate spell checking (default = off)
+keymap.set("n", '<leader>lo', ":local nospell") -- disable spell checking
+keymap.set("n", '<leader>le', ":setlocal spelllang=en_us<cr>") -- use english (default german)
+keymap.set("n", '<leader>ld', ":setlocal spelllang=de_ch<cr>") -- use german 
