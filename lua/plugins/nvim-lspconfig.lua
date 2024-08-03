@@ -44,7 +44,7 @@ return {
       }
     })
 
-    require("mason-nvim-dap").setup({
+    require("mason-dap").setup({
         ensure_installed = {
             "delve",
             "debugpy"
