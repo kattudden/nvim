@@ -48,11 +48,12 @@ return {
       -- Install these linters, formatters, debuggers automatically
       ensure_installed = {
         'black',
-        'debugpy',
         'isort',
         'mypy',
         'pylint',
         'flake8',
+        'debugpy',
+        'delve',
       },
     })
 
