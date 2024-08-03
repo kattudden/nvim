@@ -4,6 +4,6 @@ return {
     ft = 'go',
     dependencies = {},
     config = function ()
-    require('dap-go').setup()
+    require('dap').setup()
   end
 }
