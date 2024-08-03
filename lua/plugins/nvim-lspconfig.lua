@@ -44,12 +44,12 @@ return {
       }
     })
 
-    require("mason-dap").setup({
-        ensure_installed = {
-            "delve",
-            "debugpy"
-        }
-    })
+    -- require("mason-dap").setup({
+    --     ensure_installed = {
+    --         "delve",
+    --         "debugpy"
+    --     }
+    -- })
 
     require('mason-tool-installer').setup({
       -- Install these linters, formatters, debuggers automatically
@@ -59,6 +59,8 @@ return {
         'mypy',
         'pylint',
         'flake8',
+        'debugpy',
+        'delve',
       },
     })
 
