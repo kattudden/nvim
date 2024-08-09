@@ -136,3 +136,12 @@ keymap.set("n", '<leader>la', ":local spell") -- activate spell checking (defaul
 keymap.set("n", '<leader>lo', ":local nospell") -- disable spell checking
 keymap.set("n", '<leader>le', ":setlocal spelllang=en_us<cr>") -- use english (default german)
 keymap.set("n", '<leader>ld', ":setlocal spelllang=de_ch<cr>") -- use german 
+
+-- Neorg bindings
+keymap.set("n", '<localleader>N', ":Neorg workspace notes<cr>") -- Open Neorg.
+keymap.set("n", '<localleader>qq', ":Neorg return<cr>") -- return; exits neorg but not vim. --> go back to code.
+keymap.set("n", '<localleader>gi', ":Neorg index<cr>") -- return to index.
+keymap.set("n", '<localleader>tc', ":Neorg toggle-concealer<cr>") -- switch concealer on / off.
+keymap.set("n", '<localleader>ff', ":Telescope neorg find_norg_files<cr>") -- Find Notes files.
+keymap.set("n", '<localleader>fh', ":Telescope neorg search_headings<cr>") -- Find Headings.
+
